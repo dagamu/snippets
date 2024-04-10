@@ -4,6 +4,7 @@
 <tr>
 
 <td>
+
 ```python
 ### Análisis Exploratorio
 df.info()
@@ -11,9 +12,11 @@ df.describe()
 df.stats.skew()
 dfbl.stats.kurtosis()
 ```
+
 </td>
 
 <td>
+
 ```python
 ### Librerías Básicas
 import matplotlib.pyplot as plt
