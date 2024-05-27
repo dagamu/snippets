@@ -1,14 +1,19 @@
 ```python
 import pygame
 
-WIDTH = 1280
-HEIGHT = 720
+WIDTH: int = 1280
+HEIGHT: int = 720
+
+WINDOW_POS: tuple[int, int] = (1015, 30)
+os.environ['SDL_VIDEO_WINDOW_POS'] = '%i,%i' % WINDOW_POS
 
 class Game:
+
+    FPS: int = 60
+    running: bool = False
+
     def __init__(self, WIDTH, HEIGHT):
         self.window_size = (WIDTH, HEIGHT)
-        self.FPS = 60
-        self.running = False
     
     def run(self):
         pygame.init()
